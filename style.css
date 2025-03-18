@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+/* Fonts */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+/* Main Div */
+.parent{
+    background-color:hsl(0, 0%, 100%) ;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden; 
+}
+
+/* Image styling */
+.parent img{
+width: 100%;
+border-radius: 15px;
+ }
+/* Page Title */
+.title{
+    font-family: 'Young Serif', serif; 
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+    font-size: 32px;
+}
+/* All pargraphs  */
+ p, tr td:first-of-type{
+    font-family: 'Outfit', sans-serif;;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+/* Preparation time */
+.time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+.time p{
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}  
+ul, ol{
+    padding-left: 20px;
+}
+li{
+    padding: 5px;
+    color: hsl(30, 10%, 34%); ;
+    font-family: 'Outfit', sans-serif;;
+    font-size: 16px;
+}
+
+.time li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.time span{
+    padding-left: 7px;
+}
+
+span{
+    color: hsl(30, 10%, 34%); ;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+/* Ingredients */
+.brown p:first-of-type{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif; 
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: -3px;
+} 
+.brown li{
+    padding-left: 15px;
+}
+.brown li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+} 
+hr{
+    color: hsl(30, 10%, 34%);
+    opacity: 0.5;
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+/* Table */
+tr td:last-of-type{
+    font-family: 'Outfit', sans-serif;;
+    font-weight: 600;
+    color:hsl(14, 45%, 36%);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    border-bottom: 1px solid hsl(30, 10%, 34%,0.3);
+}
+tr:nth-last-of-type(1){
+    border-bottom: 1px solid hsl(30, 10%, 34%,0);
+}   
+td{
+    padding: 20px;
+
+}
+ 
+@media (max-width:375px){
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+  
+}
+.parent{
+    margin: 0px auto;
+    padding: 0px;
+    border-radius: 0;
+    width: 100%;
+    max-width: 375px;
+}
+.parent img{
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    
+}
+.title{
+    font-size: 32px;
+    padding: 0 15px;
+}
+p{
+    padding: 0 15px;
+}
+.time{
+   margin: 15px;
+}
+hr{
+    width: 85%;
+}
+
+}
