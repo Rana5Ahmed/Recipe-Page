@@ -65,6 +65,6 @@ project-folder/
 - **Interactive Elements** (e.g., ingredient checkboxes)
 
 ## Author
-👤 Rana Elwakeel   
+👤 Rana Elwakeel under the supervsion of frontend mentor   
 🔗 (https://github.com/Rana5Ahmed)
 
